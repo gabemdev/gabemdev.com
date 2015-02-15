@@ -1,0 +1,25 @@
+GABEMDEV
+_________________________
+
+PEOPLE
+
+Gabe Morales
+Design & Development
+http://gabemdev.com
+
+__________________________
+
+TECHNOLOGY
+
+Ruby
+https://ruby-lang.org
+
+Sinatra
+http://sinatrarb.com
+
+Sprockets
+https://github.com/sstephenson/sprockets
+
+Heroku
+https://heroku.com
+

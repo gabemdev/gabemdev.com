@@ -1,0 +1,77 @@
+==================================================================
+https://keybase.io/gabemdev
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://gabemdev.com
+  * I am gabemdev (https://keybase.io/gabemdev) on keybase.
+  * I have a public key with fingerprint 5885 2267 A8C8 C9CD DE05  20F6 4D09 D5CF 238E BFDB
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.3"
+        },
+        "key": {
+            "fingerprint": "58852267a8c8c9cdde0520f64d09d5cf238ebfdb",
+            "host": "keybase.io",
+            "key_id": "4D09D5CF238EBFDB",
+            "uid": "76bdaa099f47e7da1c45f848373bb600",
+            "username": "gabemdev"
+        },
+        "merkle_root": {
+            "ctime": 1417912222,
+            "hash": "11ebe7c035fe255b5bbfb9f2729d9469e90f4eb9c115f6e12d2f7927abd98e765b4d6cc09e661a6c716420198df1c55aaafbb8d5234c5031b8b289482e8ad30d",
+            "seqno": 103608
+        },
+        "service": {
+            "hostname": "gabemdev.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1417912322,
+    "expire_in": 157680000,
+    "prev": "d226dcd4ddf0a0a319b1e1fd3e941a089cc2d6fe75e2adeb758e5d426217f3e3",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owFdUm9olVUYv7PpclnLD1GLluOVEaRczjnve973nCspzesYGmhDCMu6nT/P2V53
+731v73vv2lijhQRJCCm0CZbIRhhFhWZIVGh+UGrVjH2Y5SoXKghjrS8VUdl5x6Ls
+fDrnPL/n9/x+z/O8cvstmca65C18pvP62u/qJq7LzM69R5cNOjLSA05u0FHFEMrV
+9FYWJXByTi8MSJFANoxay5GG7J6kdQmz3umDOAmjskWhbJB1naH1KTxNNmG5G+JK
+HKZcDmWMEuIHgimmuNIaECXI+J5GXFNliMtAGi0tZU+UVG+q6ixyFkJtf7084nm6
+ucPit7R35NttrLYYCHyphUCcGy+AQAusPGqYx9zAldJHKAUmEC9Z6hYSShr6Ur0l
+iHuLUIijaNG0qoYpBHs44JjYYxWJpMcmYQwSAoVcaoBQKqmURnJDAsI193wOHBkP
+JFcYU+MDJpqYgJNASM0ZBD6VnvaVQhx8HwtfBdj3CMKcaYMVpUIIIyXTlLieosjF
+kknCuMcIMKFdpK2FBJ4pR1Yccn3EhtJ33BcqSHWnbfufu6yKSjapEkfVSEVFG+mp
+VitJLnVdHaik0GdBvltYYinIsKzt1P47VmyhN3fETTsC/ZUwhkKYImjgM2RPWsh2
+NOdoO2ittKe1QQIJF3OJARvtAvewQIwrRbRvIKBAhAYZUAZUe8QnODAuuP/69KxO
+0W0pk7C7LKq1GJyhfXX31WfqGjMrli9L9zbTuPLOf5a553DDje2X9vaerZT2Hz47
+5cwdrJ27tm7TtUfPjP6ydvKOysMFd0Pzhz/+umrs94XhrumBG/ubR94+v/3S0JoD
+E6fb3n/iQTFcmituaN54ZXD+SrL7gXtO/bRptOnqR+rNQztm/D9fu/rC979tazmg
+3ju6b/dky8g37P4nj7S9+HxmtO3C63f9XP/Q+Ktbdxw7Pt96a1PXQnU4HBs/+HF1
+tr+Y65879dex1R3tY6v+WHHxpS+n1kW1k590ml3FT89fyL/zw5Et277d9fR0jB9/
+Y+LlLzavudx5cra4fOPx1tvqZ7d2zS/QQ3c/NXIi37S64dwHM9P5/s8mO088hk63
+XHxuz+dTK+UjNffre5vIQsPOy1+Nz/wN
+=I6n/
+-----END PGP MESSAGE-----
+
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gabemdev
+
+==================================================================

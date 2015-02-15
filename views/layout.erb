@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gabe Morales</title>
+  <meta name="description" content="iOS Dev, husband, daddy &amp; taco lover. Not necessarily in that order.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Gabe, Morales, gabe morales, gabe morales, gabe, geek, technology, contact, person"/>
+
+  <!-- for Facebook -->
+  <meta property="og:title" content="Gabe Morales" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="gabemdev.com">
+  <meta property="og:url" content="http://gabemdev.com/" />
+  <meta property="og:description" content="iOS Dev, husband, daddy &amp; taco lover. Not necessarily in that order." />
+
+  <link rel="author" type="text/plain" href="/humans.txt">
+  <link rel="stylesheet" href="/assets/normalize.css">
+  <link rel="stylesheet" href="/assets/main.css">
+  <script src="/assets/modernizr-2.6.2.min.js"></script>
+  <%= yield_content :head %>
+</head>
+<body>
+
+<%= yield %>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="/assets/owl.carousel.min.js"></script>
+<script src="/assets/hjaltij.min.js"></script>
+<script src="/assets/application.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48028206-1', 'gabemdev.com');
+  ga('send', 'pageview');
+
+</script>
+<%= yield_content :javascripts %>
+
+
+</body>
+</html>

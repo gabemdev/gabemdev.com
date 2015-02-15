@@ -1,0 +1,949 @@
+@import "bourbon";
+@import "globals/*";
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+@font-face {
+  font-family: 'whitney-light-webfont';
+  src: url(http://white-matter.com/fonts/whitney-light-webfont.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: #EE6E3C;
+}
+a:hover {
+  color: #113151;
+}
+/* ==========================================================================
+   Hjaltij styles
+   ========================================================================== */
+/* ui variables and elements */
+body {
+  font-family: 'whitney-light-webfont';
+  src: url(http://white-matter.com/fonts/whitney-light-webfont.ttf) format("truetype");
+  font-weight: 300;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+}
+.btn {
+  border: 1px solid #dadada;
+  /* stroke */
+
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  /* border radius */
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /* prevents bg color from leaking outside the border */
+
+  color: #878787;
+  /* text color */
+
+  font-size: 16px;
+  padding: 15px 20px;
+  display: inline-block;
+  background: #fff;
+}
+.btn:hover {
+  background: #3dcfab;
+  color: #ffffff;
+  -webkit-transition: all 0.2s ease-in-out, left 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out, left 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out, left 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out, left 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+/* sections */
+.header {
+  border-top: 6px solid #35E794;
+  background: #155D97;
+  text-align: center;
+  /* nav list */
+
+}
+.header img {
+  margin: 30px auto 0px auto;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+}
+.header h1 {
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: normal;
+  margin: 12px auto 10px auto;
+  font-weight: 200;
+}
+.header p {
+  color: #35E794;
+  font-size: 18px;
+  max-width: 420px;
+  margin: 10px auto;
+}
+.header .navigation {
+  padding: 40px 0px;
+  background: #155D97;
+  width: 100%;
+  -webkit-transition: padding 0.8s ease-in-out, left 0.8s ease-in-out;
+  -moz-transition: padding 0.8s ease-in-out, left 0.8s ease-in-out;
+  -o-transition: padding 0.8s ease-in-out, left 0.8s ease-in-out;
+  transition: padding 0.8s ease-in-out, left 0.8s ease-in-out;
+}
+.header .navigation.scroll-to-fixed-fixed {
+  padding: 40px 0px 10px 0px;
+}
+.header ul {
+  font-size: 18px;
+  margin: 0px auto;
+  padding: 0px;
+  list-style-type: none;
+  display: inline-block;
+  clear: both;
+  float: none;
+}
+.header ul li {
+  float: left;
+  padding: 0px 13px;
+}
+.header ul li a {
+  text-transform: uppercase;
+}
+.header ul li a:hover {
+  color: #ffffff;
+}
+
+section.work {
+  margin: 0px auto;
+  padding: 62px 0px 75px 0px;
+  border-bottom: 1px solid #eaeaea;
+  text-align: center;
+  clear: both;
+  float: none;
+}
+section.work h1 {
+  color: #3dcfab;
+  font-weight: normal;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+section.work ul.meta-list {
+  font-size: 13px;
+  color: #999;
+  text-transform: uppercase;
+  list-style-type: disc;
+  margin: 0px auto;
+  padding: 0;
+  display: inline-block;
+}
+section.work ul.meta-list li {
+  float: left;
+  display: inline-block;
+  padding: 0px 10px 0px 15px;
+  background: url(../img/ellips_sml.png) 0px 50% no-repeat;
+}
+section.work ul.meta-list li:first-child {
+  background: none;
+  padding-left: 0px;
+}
+section.work p {
+  color: #878787;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 15px auto;
+}
+section.work .btn {
+  margin: 20px auto;
+}
+section.work section.iphone-wrap {
+  margin: 15px auto;
+  display: table;
+  max-width: 898px;
+}
+section.work article.work-item img {
+  max-width: 100%;
+}
+section.work article.work-item.iphone {
+  background: url(../assets/iphone_body.png) 0px 0px no-repeat;
+  float: left;
+  width: 275px;
+  max-width: 100% !important;
+  height: 494px;
+  padding: 84px 0px 0px 0px;
+  margin: 0px 36px 0px 0px;
+}
+section.work article.work-item.iphone:last-child {
+  margin-right: 0px;
+}
+section.work article.work-item.iphone img {
+  width: 234px;
+  height: 412px;
+  margin-left: 2px;
+  border: 1px solid #ccc;
+}
+section.work article.work-item.ipad {
+  background: url(../img/ipad_body.png) 0px 0px no-repeat;
+  width: 600px;
+  max-width: 100% !important;
+  height: 508px;
+  padding: 60px 74px 0px 63px;
+  margin: 20px auto;
+}
+/* about */
+section.about {
+  max-width: 580px;
+  margin: 0px auto;
+  text-align: center;
+  padding: 25px 0px 65px 0px;
+}
+section.about h1 {
+  color: #EE6E3C;
+  font-weight: normal;
+  font-size: 36px;
+}
+section.about img {
+  margin: 20px 45px 35px 45px;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+}
+section.about p {
+  color: #878787;
+  font-size: 18px;
+  margin: 20px 0px 30px 0px;
+}
+/* footer */
+.footer {
+  background: #155D97;
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 14px;
+  color: #fff;
+}
+/* slider magic */
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* mouse grab icon */
+.grabbing {
+  cursor: url(grabbing.png) 8 8, move;
+}
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+/* Styling Pagination*/
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+
+}
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: alpha(opacity=50);
+  /*IE7 fix*/
+
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+.owl-pagination {
+  margin-top: 80px;
+}
+.mac .owl-pagination {
+  margin-top: 90px;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  filter: alpha(opacity=100);
+  /*IE7 fix*/
+
+  opacity: 1;
+}
+/* CSS3 Transitions */
+.owl-origin {
+  -webkit-perspective: 1200px;
+  -webkit-perspective-origin-x: 50%;
+  -webkit-perspective-origin-y: 50%;
+  -moz-perspective: 1200px;
+  -moz-perspective-origin-x: 50%;
+  -moz-perspective-origin-y: 50%;
+  perspective: 1200px;
+}
+/* fade */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;
+}
+.owl-fade-in {
+  -webkit-animation: empty 1ms both ease;
+  -moz-animation: empty 1ms both ease;
+  animation: empty 1ms both ease;
+}
+/* backSlide */
+.owl-backSlide-out {
+  -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
+  animation: backSlideOut 1s both ease;
+}
+.owl-backSlide-in {
+  -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
+  animation: backSlideIn 1s both ease;
+}
+/* goDown */
+.owl-goDown-out {
+  -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
+  animation: scaleToFade .7s ease both;
+}
+.owl-goDown-in {
+  -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
+  animation: goDown .6s ease both;
+}
+/* scaleUp */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
+  animation: scaleUpFrom .5s ease both;
+}
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
+  animation: scaleUpTo .5s ease both;
+}
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+  0% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes empty {
+  0% {
+    opacity: 1;
+  }
+}
+@keyframes empty {
+  0% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes backSlideOut {
+  25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px);
+  }
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%);
+  }
+  100% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%);
+  }
+}
+@-moz-keyframes backSlideOut {
+  25% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px);
+  }
+  75% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(-200%);
+  }
+  100% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(-200%);
+  }
+}
+@keyframes backSlideOut {
+  25% {
+    opacity: .5;
+    transform: translateZ(-500px);
+  }
+  75% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(-200%);
+  }
+  100% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(-200%);
+  }
+}
+@-webkit-keyframes backSlideIn {
+  0%,
+  25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(200%);
+  }
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0) translateX(0);
+  }
+}
+@-moz-keyframes backSlideIn {
+  0%,
+  25% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(200%);
+  }
+  75% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateZ(0) translateX(0);
+  }
+}
+@keyframes backSlideIn {
+  0%,
+  25% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(200%);
+  }
+  75% {
+    opacity: .5;
+    transform: translateZ(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0) translateX(0);
+  }
+}
+@-webkit-keyframes scaleToFade {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+}
+@-moz-keyframes scaleToFade {
+  to {
+    opacity: 0;
+    -moz-transform: scale(0.8);
+  }
+}
+@keyframes scaleToFade {
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+@-webkit-keyframes goDown {
+  from {
+    -webkit-transform: translateY(-100%);
+  }
+}
+@-moz-keyframes goDown {
+  from {
+    -moz-transform: translateY(-100%);
+  }
+}
+@keyframes goDown {
+  from {
+    transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+  }
+}
+@-moz-keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+  }
+}
+@keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+@-webkit-keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+  }
+}
+@-moz-keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+  }
+}
+@keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+
+  *text-indent: -9999px;
+}
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}
+/* ==========================================================================
+  Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 912px) {
+  section.work p {
+    width: 90%;
+  }
+  section.work article.work-item.iphone {
+    background: none;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    margin: 0px 1px;
+  }
+  section.work article.work-item.ipad {
+    background: none;
+    padding: 28px 0px 0px 0px;
+  }
+  section.work article.work-item.mac {
+    background: none;
+    padding: 28px 0 0px 0;
+  }
+  .owl-pagination {
+    margin-top: 25px;
+  }
+  .mac .owl-pagination {
+    margin-top: 25px;
+  }
+}
+/* 724 and lower */
+@media only screen and (max-width: 724px) {
+  section#selected-work {
+    padding-top: 20px;
+  }
+  section.work section.iphone-wrap {
+    margin-bottom: 0px;
+    margin-top: -10px;
+  }
+  section.work article.work-item.iphone {
+    background: none;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    clear: both;
+    float: none;
+    margin: 30px 0px;
+    width: 100%;
+  }
+  section.work article.work-item.iphone img {
+    width: 320px;
+    height: 548px;
+    margin: 0px;
+  }
+}
+/* 500px and lower */
+@media only screen and (max-width: 500px) {
+  .header {
+    height: 390px;
+    /* nav list */
+
+  }
+  .header h1 {
+    font-size: 30px;
+    font-weight: normal;
+  }
+  .header p {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .header .navigation {
+    padding: 20px 0px 25px 0px;
+  }
+  .header .navigation.sticky {
+    padding: 20px 0px 10px 0px;
+    position: fixed;
+    z-index: 10;
+  }
+  section.clients {
+    padding: 25px 0px 60px 0px;
+  }
+  section.clients ul {
+    width: 90%;
+  }
+  section#selected-work {
+    padding-top: 20px;
+  }
+  section.work {
+    margin: 0px auto 0px auto;
+    padding-bottom: 35px;
+    padding-top: 30px;
+  }
+  section.work h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  section.work .btn {
+    margin: 10px auto;
+  }
+  section.work section.iphone-wrap {
+    margin-bottom: 0px;
+    margin-top: -10px;
+  }
+  section.work article.work-item img,
+  section.work article.work-item .owl-item {
+    max-width: 100%;
+  }
+  section.work article.work-item .owl-item {
+    width: 100%;
+  }
+  section.work article.work-item.ipad {
+    padding-top: 0px;
+    width: auto;
+    height: auto;
+  }
+  section.work article.work-item.mac {
+    padding-top: 0px;
+    width: auto;
+    height: auto;
+  }
+  /* about */
+  section.about {
+    width: 90%;
+    position: relative;
+  }
+  section.about h1 {
+    margin-bottom: 0px;
+  }
+  section.about img {
+    margin: 0px auto 35px auto;
+    display: block;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-top: -285px;
+    margin-left: -100px;
+    /* Half the width */
+
+  }
+  section.about .btn {
+    margin: 280px 10px 0px 0px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  section.work ul.meta-list {
+    font-size: 12px;
+  }
+  section.work article.work-item.iphone img {
+    width: 100%;
+    height: auto;
+    border: 0px;
+  }
+  section.work article.work-item.mac img {
+    width: 100%;
+    height: auto;
+    border: 0px;
+  }
+}
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+       * Don't show links for images, or javascript/internal links
+       */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
