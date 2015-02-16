@@ -870,7 +870,7 @@ section.main p {
 /* 500px and lower */
 @media only screen and (max-width: 500px) {
   .header {
-    height: 390px;
+    /*height: 390px;*/
     /* nav list */
 
   }
