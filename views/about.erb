@@ -1,5 +1,5 @@
 <header class="header clearfix">
-<h1>About me</h1>
+  <h1>About me</h1>
             <nav class="navigation">
                 <ul>
                   <li><a href="/">Home</a></li>
@@ -10,7 +10,7 @@
             </nav>
         </header>
 
-          <section class="about" id="about">
+          <section class="about">
             <img src="/assets/me.png" alt="Gabe Morales" />
             <p>
             Hi, I'm Gabe. I am a iOS developer, Rails apprentice, and taco connoisseur. I live in Texas with my wife and daughter.
@@ -23,14 +23,44 @@
             <p>
             I have a bachelors in computer science but graduated in 2004, that's before mobile or even dynamic websites. In 2010, I decided to learn iOS. I quit my not so great insurance job after 8 years. I can't describe it but it was the first time I smiled in a very long time. In early 2011, I finally landed my first iOS position and haven't looked back.
             </p>
+        <hr>
+            <h2>Experience</h2>
+            <ul class="meta-list">
+                      <li>2011 - <%= Time.now.year %></li>
+                      <li>Lead iOS Developer</li>
+                      <li>@ Bnei Baruch USA</li>
+                  </ul>
+                  <p>
+                  Working as Lead iOS Engineer on <a href="">KabbalahApp</a>, <a href="">Torah Portion</a>, <a href="">JTimes</a>, <a href="">Jewish Holidays</a> and <a href="">Kabbalah Quiz</a>.
+                  </p>
+
+                  <ul class="meta-list">
+                    <li>2011 - <%= Time.now.year %></li>
+                    <li>iOS Developer</li>
+                    <li>@ Freelance</li>
+                </ul>
+                  <p>
+                  Worked as iOS Engineer with focus on writing iOS Clients. Some projects include: <a href="">Y55Happy</a> and <a href="">Hippo</a>.
+                  </p>
+
+                  <ul class="meta-list">
+                    <li>2005 - 2011</li>
+                    <li>Co-Founder</li>
+                    <li>@ VisualNoise</li>
+                </ul>
+                  <p>
+                  Co-founded a graphic and web design studio. Some work featured on DesignWeek Monterrey. Led and managed a team of Graphic Designers and Web Developers on integrated campaigns, promotional ads, branding and web design projects.
+                  </p>
+        <hr>
             <h2>Work</h2>
 
             <p>Here are some of the best apps I've worked on and some that made it to the AppStore.  I am currently active in the development and mainteneance of all of these projects.
             </p>
             <a href="/work" class="btn">Apps</a>
             <a href="http://github.com/gabemdev" class="btn">Github</a>
+            <p>&nbsp;</p>
 
-
+        <hr>
             <h2>More about me</h2>
             <a href="mailto:gabomorales@me.com?subject=I want to hire you" class="btn">Hire me</a>
             <a href="/resume|cv/" class="btn">Resume</a>

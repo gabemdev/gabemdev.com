@@ -1,5 +1,5 @@
-@import "bourbon";
-@import "globals/*";
+/*@import "bourbon";
+@import "globals/*";*/
 
 html,
 button,
@@ -67,7 +67,8 @@ textarea {
    ========================================================================== */
 @font-face {
   font-family: 'whitney-light-webfont';
-  src: url(http://white-matter.com/fonts/whitney-light-webfont.ttf) format("truetype");
+  /*src: url(http://white-matter.com/fonts/whitney-light-webfont.ttf) format("truetype");*/
+  src: url(/assets/whitney-light-webfont.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -83,8 +84,6 @@ a:hover {
    ========================================================================== */
 /* ui variables and elements */
 body {
-  font-family: 'whitney-light-webfont';
-  src: url(http://white-matter.com/fonts/whitney-light-webfont.ttf) format("truetype");
   font-weight: 300;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
@@ -137,9 +136,9 @@ body {
 .header h1 {
   color: #ffffff;
   font-size: 44px;
-  font-weight: normal;
+  font-weight: bold;
   margin: 12px auto 10px auto;
-  font-weight: 200;
+  font-weight: 400;
 }
 .header p {
   color: #35E794;
@@ -174,7 +173,7 @@ body {
 }
 .header ul li a {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: normal;
 }
 .header ul li a:hover {
   color: #ffffff;
@@ -191,11 +190,11 @@ section.work {
 section.work h1 {
   color: #3dcfab;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 15px;
 }
 section.work ul.meta-list {
-  font-size: 13px;
+  font-size: 16px;
   color: #999;
   text-transform: uppercase;
   list-style-type: disc;
@@ -207,7 +206,7 @@ section.work ul.meta-list li {
   float: left;
   display: inline-block;
   padding: 0px 10px 0px 15px;
-  background: url(../img/ellips_sml.png) 0px 50% no-repeat;
+  background: url(/assets/ellips_sml.png) 0px 50% no-repeat;
 }
 section.work ul.meta-list li:first-child {
   background: none;
@@ -271,7 +270,7 @@ section.about h1 {
 section.about h2 {
 color: #EE6E3C;
 font-weight: bold;
-font-size: 36px;
+font-size: 34px;
 }
 section.about img {
   margin: 20px 45px 35px 45px;
@@ -284,6 +283,72 @@ section.about p {
   font-size: 18px;
   margin: 20px 0px 30px 0px;
 }
+
+section.about ul.meta-list {
+  font-size: 16px;
+  color: #999;
+  text-transform: uppercase;
+  list-style-type: disc;
+  margin: 0px auto;
+  padding: 0;
+  display: inline-block;
+}
+section.about ul.meta-list li {
+  float: left;
+  display: inline-block;
+  padding: 0px 10px 0px 15px;
+  background: url(/assets/ellips_sml.png) 0px 50% no-repeat;
+}
+section.about ul.meta-list li:first-child {
+  background: none;
+  padding-left: 0px;
+}
+
+/* Main */
+section.main {
+  display: block;
+  max-width: 640px;
+  padding: 0;
+  margin: 0 auto;
+  vertical-align: baseline;
+  font-size: 100%;
+  width: 100%;
+
+}
+
+section.main h1 {
+  color: #3dcfab;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+section.main h2 {
+  color: #3dcfab;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+section.main img {
+  display: block;
+  border: 5px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px;
+  background: #fff no-repeat;
+  float: left;
+  height: 300px;
+  width: 300px;
+  margin: 0.5em 1em 0.5em 0;
+}
+
+section.main p {
+  margin: 0 0 1.5em;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 1.5em;
+  color: #878787;
+}
+
+
+
 /* footer */
 .footer {
   background: #155D97;

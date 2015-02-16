@@ -20,6 +20,7 @@ end
     get '/' do
       begin
         @latest_post = $redis.hgetall('latest_post')
+        @instagram_posts = JSON($redis['instagram'])
       rescue
       end
 
@@ -27,9 +28,9 @@ end
     end
 
     # Redirect blog
-    get '/blog' do
-      redirect 'http://blog.gabemdev.com'
-    end
+    # get '/blog' do
+    #   redirect 'http://blog.gabemdev.com'
+    # end
 
    # Static Pages
     %w{about blog work}.each do |page|

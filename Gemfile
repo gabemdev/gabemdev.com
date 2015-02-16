@@ -35,6 +35,9 @@ gem 'httparty', require: false
 # GitHub
 gem 'octokit', require: false
 
+# Instagram
+gem 'instagram', require: false
+
 # XML Parsing (for talking to Amazon)
 gem 'nokogiri', require: false
 gem 'nori', require: false

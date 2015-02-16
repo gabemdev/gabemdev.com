@@ -2,14 +2,24 @@ require 'rubygems'
 require 'bundler'
 Bundler.require
 
+require 'base64'
 require 'httparty'
 require 'json'
 require 'octokit'
+require 'open-uri'
+require 'nori'
 
 desc 'Update all of the things'
-task :update => [:'update:blog']
+task :update => [:'update:instagram',:'update:blog']
 
 namespace :update do
+  desc 'Get Instagram photos'
+  task :instagram do
+    response = HTTParty.get("https://api.instagram.com/v1/users/68907/media/recent/?access_token=#{ENV['INSTAGRAM_TOKEN']}&count=4")
+    photos = JSON(response.body)['data']
+    redis['instagram'] = JSON.dump(photos)
+    puts 'Done! Cached Instagram photos.'
+  end
 
   desc 'Store my latest post in Redis'
   task :blog do
@@ -30,5 +40,8 @@ namespace :update do
   else
     Redis.new
   end
+
 end
+
+
 end
