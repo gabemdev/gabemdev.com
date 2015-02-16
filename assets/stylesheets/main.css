@@ -180,6 +180,42 @@ body {
   color: #ffffff;
 }
 
+section.footer .navigation {
+  padding: 40px 0px;
+  background: #155D97;
+  width: 100%;
+  -webkit-transition: padding 0.8s ease-in-out, left 0.8s ease-in-out;
+  -moz-transition: padding 0.8s ease-in-out, left 0.8s ease-in-out;
+  -o-transition: padding 0.8s ease-in-out, left 0.8s ease-in-out;
+  transition: padding 0.8s ease-in-out, left 0.8s ease-in-out;
+
+}
+
+section.footer ul {
+  font-size: 18px;
+  margin: 0px auto;
+  padding: 0px;
+  list-style-type: none;
+  display: inline-block;
+  clear: both;
+  float: none;
+}
+
+section.footer ul li {
+  float: left;
+  padding: 0px 13px;
+}
+
+section.footer ul li a {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+section.footer ul li a:hover {
+  color: #ffffff;
+
+}
+
 section.work {
   margin: 0px auto;
   padding: 62px 0px 75px 0px;
@@ -870,7 +906,7 @@ section.main p {
 /* 500px and lower */
 @media only screen and (max-width: 500px) {
   .header {
-    /*height: 390px;*/
+    height: 390px;
     /* nav list */
 
   }
