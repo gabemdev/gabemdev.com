@@ -31,4 +31,4 @@ namespace :update do
     Redis.new
   end
 end
-
+end
