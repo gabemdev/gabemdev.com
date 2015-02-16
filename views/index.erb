@@ -1,55 +1,23 @@
-<header class="header clearfix">
-    <h1>Gabe Morales</h1>
-        <nav class="navigation">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/work">Work</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/blog">Blog</a></li>
-            </ul>
-        </nav>
-</header>
+<!--     <section class="logo">
+<img src="/assets/logo_me.png">
+    </section> -->
     <section class="main">
-    <h1>About</h1>
+
     <img src="/assets/me.png" alt="Gabe Morales" />
-    <p>I am a iOS and Rails software engineer, musician, wanna be designer, and burger connoisseur.
-    I live in San Francisco with my beautiful wife.
+    <p>Hi, I'm Gabe. I am a iOS Developer, Rails apprentince, and taco connoisseur. I live in Texas with my wife and daughter.
     </p>
     <p>
-    Currently, I'm a freelancer. You can hire me. I also work on Roon in my spare time. Checkout my recent projects.
+    Currently, I work <b>@BneiBaruch</b> as lead iOS Developer and part-time freelancer. You can <a href="">hire me</a>. Check out some of my <a href="">projects</a>.
     </p>
     <p>
-    When the iPhone SDK first came out in 2008, I wrote this app called Bible that launched day one of the App Store. There are millions of people using it now, which is really humbling. I used to own a few companies, freelanced, and worked at some startups. Notably, Hipstamatic and Scribd. Recently, I sold an app I built, Cheddar, to some cool folks. Ask me about it on Twitter if you're curious.
+    I have a bachelors in computer science but graduated in 2004, that's before mobile or even dynamic websites. In 2010, I decided to learn iOS. I quit my not so great insurance job after 8 years. I can't describe it but it was the first time I smiled in a very long time. In early 2011, I finally landed my first iOS position and haven't looked back.
     </p>
+    <p>&nbsp;</p>
     </section>
 
-    <% if @instagram_posts %>
-  <div class="instagram four-up">
-    <ul>
-    <% @instagram_posts.each do |image| %>
-      <li>
-        <a href="<%= image['link'] %>" rel="external nofollow" title="<%= image['caption'] ? image['caption']['text'] : nil %>">
-          <img src="<%= image['images']['low_resolution']['url'] %>" alt="<%= image['caption'] ? image['caption']['text'] : nil %>">
-        </a>
-      </li>
-    <% end %>
-    </ul>
-    <p>
-      <a href="http://instagram.com/soffes?ref=badge" class="ig-b- ig-b-16"><img src="http://badges.instagram.com/static/images/ig-badge-16.png" alt="Instagram"></a>
-      <a href="http://instagram.com/soffes" rel="external nofollow">Follow @soffes</a>
-    </p>
-  </div>
-  <% end %>
+    <section class="about">
+    <a href="mailto:gabomorales@me.com?subject=I want to hire you" class="btn">Hire me</a>
+            <a href="/resume|cv/" class="btn">Resume</a>
+            <a href="http://twitter.com/gabemdev" class="btn">@gabemdev</a>
 
-<!-- <section class="work">
-    <% if @latest_post && @latest_post.length > 0 %>
-      <h2>Latest Writing</h2>
-          <article>
-            <h3><a href="<%= @latest_post['url'] %>"><%= @latest_post['title'] %></a></h3>
-            <%= @latest_post['excerpt_html'] %>
-            <p><a href="<%= @latest_post['url'] %>">Continue Reading &rarr;</a></p>
-          </article>
-    <% end %>
-</section> -->
-        </section>
-
+    </section>

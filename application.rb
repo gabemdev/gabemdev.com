@@ -18,22 +18,17 @@ end
 
     # Homepage
     get '/' do
-      begin
-        @latest_post = $redis.hgetall('latest_post')
-        @instagram_posts = JSON($redis['instagram'])
-      rescue
-      end
 
         erb :index
     end
 
     # Redirect blog
-    # get '/blog' do
-    #   redirect 'http://blog.gabemdev.com'
-    # end
+    get '/blog' do
+      redirect 'http://blog.gabemdev.com'
+    end
 
    # Static Pages
-    %w{about blog work}.each do |page|
+    %w{about work}.each do |page|
       get "/#{page}" do
         erb page.to_sym
       end
@@ -44,12 +39,6 @@ end
       redirect 'https://github.com/gabemdev/resume/blob/master/Gabe%20Morales%20Resume.pdf?raw=true'
     end
 
-    # Redirect posts to blog
-    get %r{/([\w\d\-]+)$} do |key|
-      # TODO: Maybe hit an API occasionally to get allowed keys
-      # and then 404 if it's not a blog post I've written.
-      redirect "http://blog.soff.es/#{key}"
-    end
 
   end
 end

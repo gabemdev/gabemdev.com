@@ -84,6 +84,7 @@ a:hover {
    ========================================================================== */
 /* ui variables and elements */
 body {
+  border-top: 6px solid #EE6E3C;
   font-weight: 300;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
@@ -122,7 +123,7 @@ body {
 /* sections */
 .header {
   border-top: 6px solid #EE6E3C;
-  background: #155D97;
+/*  background: #155D97;*/
   text-align: center;
   /* nav list */
 
@@ -134,7 +135,7 @@ body {
   border-radius: 75px;
 }
 .header h1 {
-  color: #ffffff;
+  color: #505050;
   font-size: 44px;
   font-weight: bold;
   margin: 12px auto 10px auto;
@@ -278,6 +279,8 @@ section.about img {
   width: 200px;
   border-radius: 100px;
 }
+
+
 section.about p {
   color: #878787;
   font-size: 18px;
@@ -304,11 +307,26 @@ section.about ul.meta-list li:first-child {
   padding-left: 0px;
 }
 
+section.logo {
+  display: block;
+  max-width: 640px;
+  padding: 25px 0px 25px 0px;
+  margin: 0 auto;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+section.logo img {
+  display: block;
+  width: 600px;
+  height: 99px;
+}
+
 /* Main */
 section.main {
   display: block;
   max-width: 640px;
-  padding: 0;
+  padding: 60px 0 0 0;
   margin: 0 auto;
   vertical-align: baseline;
   font-size: 100%;

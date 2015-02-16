@@ -47,6 +47,17 @@
 </script>
 <%= yield_content :javascripts %>
 
+        <header class="header clearfix">
+            <nav class="navigation">
+                <ul>
+                  <li><a href="/">Home</a></li>
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
 <footer class="footer">
     <p>© 2013-<%= Time.now.year %> Gabe Morales.</p>
 </footer>
