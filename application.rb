@@ -18,6 +18,11 @@ end
 
     # Homepage
     get '/' do
+      begin
+        @latest_post = $redis.hgetall('latest_post')
+      rescue
+      end
+
         erb :index
     end
 
