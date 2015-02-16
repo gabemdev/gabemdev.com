@@ -1,6 +1,9 @@
 require 'sinatra/content_for'
 require 'json'
 
+# Connect to Redis
+uri = URI.parse(ENV['REDISTOGO_URL'] || 'redis://localhost:6379')
+$redis = Redis.new(host: uri.host, port: uri.port, password: uri.password)
 
 module GabemdevCom
     module NumberHelpers
@@ -33,6 +36,13 @@ end
     # Redirect resume to GitHub
     get /resume|cv/ do
       redirect 'https://github.com/gabemdev/resume/blob/master/Gabe%20Morales%20Resume.pdf?raw=true'
+    end
+
+    # Redirect posts to blog
+    get %r{/([\w\d\-]+)$} do |key|
+      # TODO: Maybe hit an API occasionally to get allowed keys
+      # and then 404 if it's not a blog post I've written.
+      redirect "http://blog.soff.es/#{key}"
     end
 
   end
