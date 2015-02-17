@@ -292,6 +292,22 @@ section.work article.work-item.ipad {
   padding: 60px 74px 0px 63px;
   margin: 20px auto;
 }
+
+section.logo {
+  display: block;
+  max-width: 640px;
+  padding: 40px 0 5px 35px;
+  margin: 0 auto;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+section.logo img {
+  width: 334px;
+  height: 50px;
+  margin: 0.5em 1em 0.5em 0;
+}
+
 /* about */
 section.about {
   max-width: 580px;
@@ -305,7 +321,7 @@ section.about h1 {
   font-size: 36px;
 }
 section.about h2 {
-color: #EE6E3C;
+color: #3dcfab;
 font-weight: bold;
 font-size: 34px;
 }
@@ -343,26 +359,11 @@ section.about ul.meta-list li:first-child {
   padding-left: 0px;
 }
 
-section.logo {
-  display: block;
-  max-width: 640px;
-  padding: 25px 0px 25px 0px;
-  margin: 0 auto;
-  vertical-align: baseline;
-  width: 100%;
-}
-
-section.logo img {
-  display: block;
-  width: 600px;
-  height: 99px;
-}
-
 /* Main */
 section.main {
   display: block;
-  max-width: 640px;
-  padding: 60px 0 0 0;
+  max-width: 580px;
+  padding: 10px 0 0 0;
   margin: 0 auto;
   vertical-align: baseline;
   font-size: 100%;
@@ -388,16 +389,16 @@ section.main img {
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px;
   background: #fff no-repeat;
   float: left;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   margin: 0.5em 1em 0.5em 0;
 }
 
 section.main p {
   margin: 0 0 1.5em;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 200;
-  line-height: 1.5em;
+  line-height: 1.4em;
   color: #878787;
 }
 
