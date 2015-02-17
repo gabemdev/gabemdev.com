@@ -996,6 +996,11 @@ section.main p {
   section.work ul.meta-list {
     font-size: 12px;
   }
+
+  section.work ul.meta-list {
+    font-size: 12px;
+  }
+
   section.work article.work-item.iphone img {
     width: 100%;
     height: auto;
