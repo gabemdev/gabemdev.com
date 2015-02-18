@@ -24,7 +24,7 @@ end
 
     # Redirect blog
     get '/blog' do
-      redirect 'http://gabemdev.roon.io'
+      redirect 'http://blog.gabemdev.com'
     end
 
    # Static Pages
