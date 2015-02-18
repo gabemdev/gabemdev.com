@@ -997,10 +997,6 @@ section.main p {
     font-size: 12px;
   }
 
-  section.work ul.meta-list {
-    font-size: 12px;
-  }
-
   section.work article.work-item.iphone img {
     width: 100%;
     height: auto;
@@ -1010,6 +1006,10 @@ section.main p {
     width: 100%;
     height: auto;
     border: 0px;
+  }
+
+  section.about ul.meta-list {
+    font-size: 12px;
   }
 }
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
