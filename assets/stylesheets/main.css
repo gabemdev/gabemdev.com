@@ -243,7 +243,7 @@ section.work ul.meta-list li {
   float: left;
   display: inline-block;
   padding: 0px 10px 0px 15px;
-  background: url(/assets/ellips_sml.png) 0px 50% no-repeat;
+  background: url(https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-694533295047/assets/marketing/images/ellips_sml.png) 0px 50% no-repeat;
 }
 section.work ul.meta-list li:first-child {
   background: none;
@@ -267,7 +267,7 @@ section.work article.work-item img {
   max-width: 100%;
 }
 section.work article.work-item.iphone {
-  background: url(../assets/iphone_body.png) 0px 0px no-repeat;
+  background: url(https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-694533295047/assets/marketing/images/iphone_body.png) 0px 0px no-repeat;
   float: left;
   width: 275px;
   max-width: 100% !important;
@@ -352,7 +352,7 @@ section.about ul.meta-list li {
   float: left;
   display: inline-block;
   padding: 0px 10px 0px 15px;
-  background: url(/assets/ellips_sml.png) 0px 50% no-repeat;
+  background: url(https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-694533295047/assets/marketing/images/ellips_sml.png) 0px 50% no-repeat;
 }
 section.about ul.meta-list li:first-child {
   background: none;
