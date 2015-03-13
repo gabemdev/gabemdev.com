@@ -24,7 +24,7 @@ end
 
     # Redirect blog
     get '/blog' do
-      redirect 'http://blog.gabemdev.com'
+      redirect 'https://medium.com/@gabemdev'
     end
 
    # Static Pages
