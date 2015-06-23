@@ -36,7 +36,7 @@ end
 
     # Redirect resume to GitHub
     get /resume|cv/ do
-      redirect 'https://github.com/gabemdev/resume/blob/master/Gabe%20Morales%20Resume.pdf?raw=true'
+      redirect 'https://github.com/gabemdev/resume/blob/master/Gabe_Morales_Resume.pdf?raw=true'
     end
 
 
