@@ -15,15 +15,17 @@ task :update => [:'update:blog']
 namespace :update do
   desc 'Store my latest post in Redis'
   task :blog do
-    response = HTTParty.get('https://medium.com/@gabemdev/latest')
-    post = JSON(response.body).first
+    # response = HTTParty.get('https://medium.com/@gabemdev/latest')
+    doc = Nori.new.parse(open('https://medium.com/@gabemdev/latest').read)
+    post = doc['rss']['channel']['item'].first
 
-    %w{title excerpt_html url}.each do |key|
-      redis.hset 'latest_post', key, post[key]
-    end
+    redis.hset 'latest_post', 'title', post['title']
+    redis.hset 'latest_post', 'excerpt_html', post['description']
+    redis.hset 'latest_post', 'url', post['link']
 
     puts "Done! Cached `#{post['title']}`"
   end
+end
 
 private
 
